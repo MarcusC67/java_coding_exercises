@@ -1,6 +1,9 @@
 package com.techreturners.exercise001;
 
+import com.sun.org.apache.xpath.internal.functions.FuncCount;
+
 import java.util.List;
+import java.util.ListIterator;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
@@ -25,6 +28,21 @@ public class Exercise001 {
 
     public int countLinuxUsers(List<User> users) {
         // Add your code here
-        return 0;
+        int count = 0;
+        // Iterating ArrayList -
+        // If ArrayList:Type = Linux add to count
+        for(User str:users) {
+            if (str.getType().equals("Linux")) {
+                count++;
+            }
+        }
+        return count;
+
+        //for (Customer customer : customers) {
+        //        if (customer.getName().equals(name)) {
+        //            return customer;
+        //        }
+        //    }
+        // Other options = Iterator loop or Stream API = .filter(str -> "Linux".equals(str.getType("")))
     }
 }
