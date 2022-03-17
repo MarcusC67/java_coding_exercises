@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 public class Exercise004 {
 
     public Exercise004(LocalDate date) {
+        // Convert date to seconds
         throw new UnsupportedOperationException("You can delete this statement and add your code here.");
     }
 
