@@ -5,16 +5,25 @@ import java.time.LocalDateTime;
 
 public class Exercise004 {
 
+    // Set constant
+    private final int GIGASECOND = 1000000000;
+
+    // Initialise tempDate
+    private LocalDateTime tempDate = LocalDateTime.now();
+
+    // Set tempDate to input date plus time (start of day 00:00)
     public Exercise004(LocalDate date) {
-        // Convert date to seconds
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        tempDate = date.atStartOfDay();
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        tempDate = dateTime;
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        // Add 1000000000 seconds
+        LocalDateTime datePlusGigaSecond = tempDate.plusSeconds(GIGASECOND);
+        return datePlusGigaSecond;
     }
+
 }

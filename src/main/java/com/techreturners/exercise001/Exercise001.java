@@ -38,16 +38,5 @@ public class Exercise001 {
         }
         return count;
 
-        //for (Customer customer : customers) {
-        //        if (customer.getName().equals(name)) {
-        //            return customer;
-        //        }
-        //    }
-        // Other options = Iterator loop
-        //
-        // or Stream API = .filter(str -> "Linux".equals(str.getType("")))
-        //
-        // EG: memberNames.stream().filter((s) -> s.startsWith("A"))
-        //                    .forEach(System.out::println);
     }
 }

@@ -11,8 +11,12 @@ import org.junit.Test;
 public class Exercise001Test {
 
     @Test
+    // test method
     public void checkHello() {
+        // Arrange - setting up the objects needed for tests
         Exercise001 ex001 = new Exercise001();
+        // Act - action you take, ie: run the code you want to test
+        // Assert - what you are testing for - actual vs. expected result
         assertEquals("Hello", ex001.capitalizeWord("hello"));
         assertEquals("The quick fox", ex001.capitalizeWord("the quick fox"));
         assertEquals("Oh no, bears!!!", ex001.capitalizeWord("oh no, bears!!!"));
