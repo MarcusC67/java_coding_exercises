@@ -3,6 +3,7 @@ package com.techreturners.exercise004;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+// access modifier
 public class Exercise004 {
 
     // Set constant
@@ -16,6 +17,7 @@ public class Exercise004 {
         tempDate = date.atStartOfDay();
     }
 
+    // Set temp date variable to dateTime passed in
     public Exercise004(LocalDateTime dateTime) {
         tempDate = dateTime;
     }

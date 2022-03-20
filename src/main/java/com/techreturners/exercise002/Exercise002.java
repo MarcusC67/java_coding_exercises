@@ -5,9 +5,6 @@ public class Exercise002 {
 
     // method signature
     // access modifier
-    // return data type - true/false
-    // method name
-    // parameters
     public boolean isFromManchester(Person person) {
         // Return True if Manchester
         return (person.getCity().equals("Manchester"));
